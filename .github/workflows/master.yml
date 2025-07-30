@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     env:
       OWNER: mechta-market
-      IMAGE: dwh-airflow
+      IMAGE: dwh-n8n
     steps:
       - uses: actions/checkout@v4
 
