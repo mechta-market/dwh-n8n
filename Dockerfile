@@ -1,9 +1,7 @@
 FROM n8nio/n8n:latest
 
-#USER root
+USER root
 
-RUN apt-get update && apt-get install -f -y \
-    ffmpeg \
-    && rm -rf /var/lib/apt/lists/*
+RUN apk add --no-cache ffmpeg
 
-#USER airflow
+USER node
