@@ -4,7 +4,6 @@ USER root
 
 RUN apk add --no-cache ffmpeg
 
-RUN addgroup --gid 101 telegramgroup
-RUN adduser node telegramgroup
+RUN adduser node $(getent group 101 | cut -d: -f1)
 
 USER node
