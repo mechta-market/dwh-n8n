@@ -6,7 +6,7 @@ on:
 jobs:
   build:
     name: Build
-    runs-on: ubuntu-latest
+    runs-on: yc-arc
     env:
       OWNER: mechta-market
       IMAGE: dwh-n8n
