@@ -6,7 +6,7 @@ RUN apk add --no-cache apk-tools-static
 
 # Версию n8n поднимать осознанно: сверяться со списком уязвимостей
 # https://github.com/n8n-io/n8n/security/advisories
-FROM n8nio/n8n:1.123.98
+FROM n8nio/n8n:2.48.5
 
 USER root
 
